@@ -1,0 +1,9 @@
+.header {
+	padding-block: clamp(1rem, 3vw, 2rem);
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

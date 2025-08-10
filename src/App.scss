@@ -1,0 +1,15 @@
+@import 'normalize.css';
+
+@import './scss/reset';
+@import './scss/vars';
+@import './scss/media';
+@import './scss/mixins';
+@import './scss/container';
+@import './scss/fonts';
+
+body {
+	font-size: $font-size;
+	font-weight: $font-weight;
+	color: $color;
+	background: $background;
+}

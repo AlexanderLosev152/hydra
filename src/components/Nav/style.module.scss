@@ -1,0 +1,17 @@
+@import '../../scss/media';
+
+.nav {
+	@include media($tablet) {
+		display: none;
+	}
+	ul {
+		display: flex;
+		gap: 1rem;
+		li {
+			a {
+				font-weight: 700;
+				font-size: 0.75rem;
+			}
+		}
+	}
+}

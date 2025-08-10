@@ -1,0 +1,15 @@
+$container-w: 73.25rem;
+$container-p: 1rem;
+
+$color: #fff;
+$background: linear-gradient(
+	90deg,
+	rgba(0, 0, 0, 1) 0%,
+	rgba(58, 52, 86, 1) 35%,
+	rgba(33, 30, 46, 1) 100%
+);
+
+$font-size-mini: 0.75rem;
+$font-size: 1rem;
+$h1-font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+$font-weight: 400;

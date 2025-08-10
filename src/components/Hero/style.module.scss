@@ -1,0 +1,55 @@
+@import '../../scss/vars';
+@import '../../scss/media';
+
+.content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: clamp(2rem, 9vw, 9rem);
+	margin-bottom: 5.5rem;
+	@include media($mobile) {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.heroImg {
+		@include media($mobile) {
+			order: -1;
+		}
+	}
+}
+
+.text {
+	max-width: 28.5rem;
+	@include media($mobile) {
+		text-align: center;
+		max-width: 18.5rem;
+	}
+	p {
+		margin-bottom: clamp(2rem, 4vw, 4.125rem);
+	}
+}
+
+.title {
+	font-weight: 700;
+	font-size: $h1-font-size;
+	color: #fff;
+	margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
+	span {
+		font-size: calc($h1-font-size + 0.2rem);
+		background: linear-gradient(227deg, #c0b7e8 0%, #8176af 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.btnWrapper {
+	display: flex;
+	align-items: center;
+	gap: 2.5rem;
+	img {
+		@include media($mobile) {
+			display: none;
+		}
+	}
+}

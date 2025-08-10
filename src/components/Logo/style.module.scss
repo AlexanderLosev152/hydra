@@ -1,0 +1,6 @@
+@import '../../scss/_media.scss';
+.logo {
+	@include media($mobile) {
+		max-width: 7rem;
+	}
+}
