@@ -1,5 +1,6 @@
 @import '../../scss/mixins';
 @import '../../scss/media';
+
 .items {
 	@include grid(20rem, 1rem);
 	justify-items: center;
@@ -11,19 +12,4 @@
 		rgba(58, 52, 86, 0.95) 0%,
 		#211e2e 100%
 	);
-}
-.item {
-	display: flex;
-	align-items: center;
-	gap: clamp(1rem, 2.5vw, 1.5rem);
-}
-
-.title {
-	font-weight: 700;
-	font-size: clamp(0.8rem, 2vw, 1.5rem);
-}
-
-.address {
-	font-weight: 400;
-	font-size: 0.875rem;
 }
