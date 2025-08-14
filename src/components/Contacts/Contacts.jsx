@@ -1,11 +1,7 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
 import { contacts } from '../../data/contacts.js';
-
-import ContactCard from '../ContactCard/ContactCard';
+import ContactCard from '../ContactCard/ContactCard.jsx';
 import styles from './style.module.scss';
-import 'swiper/css';
-import 'swiper/css/navigation';
+import SwiperWrapper from '../SwiperWripper/SwiperWrapper.jsx';
 
 const Contacts = () => {
 	return (
@@ -16,23 +12,9 @@ const Contacts = () => {
 				))}
 			</div>
 
-			<Swiper
-				className={styles.swiper}
-				modules={[Navigation]}
-				navigation={{
-					nextEl: `.${styles.swiperButtonNext}`,
-					prevEl: `.${styles.swiperButtonPrev}`
-				}}
-				loop={true}
-			>
-				{contacts.map((contact, index) => (
-					<SwiperSlide key={`slide-${index}`}>
-						<ContactCard contact={contact} />
-					</SwiperSlide>
-				))}
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
-			</Swiper>
+			<SwiperWrapper data={contacts}>
+				{(item) => <ContactCard contact={item} />}
+			</SwiperWrapper>
 		</>
 	);
 };
