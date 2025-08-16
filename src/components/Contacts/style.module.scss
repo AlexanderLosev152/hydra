@@ -1,15 +1,28 @@
 @import '../../scss/mixins';
 @import '../../scss/media';
+@import '../../scss/vars';
 
 .items {
-	@include grid(20rem, 1rem);
+	display: flex;
+	justify-content: space-between;
 	justify-items: center;
 	padding: clamp(1.2rem, 4vw, 3rem) clamp(1.2rem, 3vw, 2.4rem);
-	border-radius: 5.5rem;
-	box-shadow: 0 4px 4px 0 rgba(192, 183, 232, 0.01);
-	background: radial-gradient(
-		2900.76% 50.13% at 50% 53.89%,
-		rgba(58, 52, 86, 0.95) 0%,
-		#211e2e 100%
-	);
+	border-radius: $border-radius-big;
+	box-shadow: $box-shadow;
+	background: $radial-gradient;
+	@include media($tablet) {
+		display: none;
+	}
+	div {
+		//width: 33%;
+		flex-shrink: 1;
+		width: max(200px, 100%);
+		&:not(:last-child):after {
+			content: '';
+			width: 2px;
+			height: 100%;
+			background: #c0b7e8;
+			margin-right: 2rem;
+		}
+	}
 }

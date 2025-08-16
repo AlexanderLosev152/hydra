@@ -8,6 +8,15 @@ $background: linear-gradient(
 	rgba(58, 52, 86, 1) 35%,
 	rgba(33, 30, 46, 1) 100%
 );
+$box-shadow: 0 4px 4px 0 rgba(192, 183, 232, 0.01);
+$border-radius-big: 5.5rem;
+$border-radius-small: 2.5rem;
+
+$radial-gradient: radial-gradient(
+	2900.76% 50.13% at 50% 53.89%,
+	rgba(58, 52, 86, 0.95) 0%,
+	#211e2e 100%
+);
 
 $font-size-mini: 0.75rem;
 $font-size: 1rem;

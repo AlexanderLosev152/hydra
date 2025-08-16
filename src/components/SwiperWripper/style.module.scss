@@ -1,0 +1,27 @@
+@import '../../scss/media';
+@import '../../scss/vars';
+.wrapper {
+	display: none;
+	padding: 1.2rem 3rem;
+	border-radius: $border-radius-big;
+	box-shadow: $box-shadow;
+	background: $radial-gradient;
+	position: relative;
+	@include media($tablet) {
+		display: block;
+	}
+}
+
+.swiperButton {
+	position: absolute;
+	top: 40%;
+}
+
+.swiperButtonNext {
+	left: 1rem;
+}
+
+.swiperButtonPrev {
+	transform: translateY(-0.4rem) rotate(-180deg);
+	right: 1rem;
+}

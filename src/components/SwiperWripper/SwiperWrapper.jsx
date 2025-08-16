@@ -3,10 +3,11 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import styles from './style.module.scss';
+import Arrow from '../Arrov/Arrow';
 
 const SwiperWrapper = ({ data, children }) => {
 	return (
-		<div className={styles.container}>
+		<div className={styles.wrapper}>
 			<Swiper
 				modules={[Navigation]}
 				navigation={{
@@ -23,13 +24,12 @@ const SwiperWrapper = ({ data, children }) => {
 				))}
 			</Swiper>
 
-			{/* Кнопки навигации */}
-			<div
-				className={`${styles.swiperButtonNext} ${styles.swiperButton}`}
-			></div>
-			<div
-				className={`${styles.swiperButtonPrev} ${styles.swiperButton}`}
-			></div>
+			<div className={`${styles.swiperButtonNext} ${styles.swiperButton}`}>
+				<Arrow />
+			</div>
+			<div className={`${styles.swiperButtonPrev} ${styles.swiperButton}`}>
+				<Arrow />
+			</div>
 		</div>
 	);
 };
