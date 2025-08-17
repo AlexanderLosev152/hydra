@@ -1,3 +1,11 @@
+.wrapper {
+	display: flex;
+	align-items: center;
+	p {
+		max-width: 650px;
+	}
+}
+
 h2 {
 	font-weight: 700;
 	font-size: clamp(1.625rem, 3vw, 2.25rem);
