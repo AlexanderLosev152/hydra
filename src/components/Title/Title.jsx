@@ -1,7 +1,15 @@
-// import styles from './style.module.scss';
+import styles from './style.module.scss';
 
-const Title = ({ heading }) => {
-	return <h1>{heading}</h1>;
+const Title = ({ top, span, children }) => {
+	return (
+		<h2 className={styles.title}>
+			{top}
+			<span>
+				{span}
+				{children}
+			</span>
+		</h2>
+	);
 };
 
 export default Title;

@@ -1,21 +1,8 @@
 .wrapper {
 	display: flex;
 	align-items: center;
-	p {
-		max-width: 650px;
-	}
 }
 
-h2 {
-	font-weight: 700;
-	font-size: clamp(1.625rem, 3vw, 2.25rem);
-	line-height: 1;
-	display: grid;
-	gap: 1rem;
-	span {
-		font-weight: 300;
-		display: flex;
-		align-items: center;
-		gap: 1rem;
-	}
+.descr {
+	max-width: 650px;
 }
