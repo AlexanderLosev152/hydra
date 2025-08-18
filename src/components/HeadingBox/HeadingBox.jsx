@@ -5,7 +5,7 @@ import styles from './style.module.scss';
 const HeadingBox = ({ top, span, text }) => {
 	return (
 		<div className={styles.wrapper}>
-			<Title top={top} span={span} children={<ArrowTitle />} />
+			<Title top={top} span={span} />
 			<p className={styles.descr}>{text}</p>
 		</div>
 	);

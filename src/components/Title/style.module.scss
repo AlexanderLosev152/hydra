@@ -1,9 +1,7 @@
 .title {
 	font-weight: 700;
 	font-size: clamp(1.625rem, 3vw, 2.25rem);
-	line-height: 1;
-	display: grid;
-	gap: 1rem;
+	//line-height: 0;
 	span {
 		font-weight: 300;
 		display: flex;

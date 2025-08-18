@@ -1,13 +1,10 @@
 import styles from './style.module.scss';
 
-const Title = ({ top, span, children }) => {
+const Title = ({ top, span }) => {
 	return (
 		<h2 className={styles.title}>
 			{top}
-			<span>
-				{span}
-				{children}
-			</span>
+			<span>{span}</span>
 		</h2>
 	);
 };

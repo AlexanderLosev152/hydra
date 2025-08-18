@@ -1,5 +1,11 @@
+@import '../../scss/mixins';
 .wrapper {
-	display: flex;
-	align-items: center;
-	margin-bottom: 6rem;
+	@include grid(clamp(19rem, 32vw, 25rem), 1rem); //display: flex;
+	//justify-content: space-between;
+	//align-items: center;
+	//gap: 1rem;
+	margin-bottom: clamp(2rem, 5vw, 6rem);
+	p {
+		max-width: 36rem;
+	}
 }

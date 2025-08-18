@@ -1,10 +1,17 @@
 @import '../../scss/mixins';
+@import '../../scss/media';
 .wrapper {
-	@include grid(20rem, 7.4rem);
+	@include grid(clamp(17rem, 25vw, 20rem), clamp(1rem, 8vw, 7.4rem));
 	align-items: center;
+	@include media($tablet) {
+		@include grid(clamp(17rem, 25vw, 20rem), clamp(1rem, 3vw, 7.4rem));
+	}
 }
 
 .text {
+	h2 {
+		display: grid;
+	}
 	p {
 		margin-top: 2rem;
 		margin-bottom: 3rem;
