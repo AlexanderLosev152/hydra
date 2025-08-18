@@ -1,10 +1,17 @@
+import HeadingBox from '../HeadingBox/HeadingBox';
 import styles from './style.module.scss';
 
 const Tehnologies = () => {
 	return (
-		<section>
+		<section className={styles.tehnologies}>
 			<div className="container">
-				<div className={styles.wrapper}></div>
+				<div className={styles.wrapper}>
+					<HeadingBox
+						top="HOW WE BUILD"
+						span="WITH HYDRA VR?"
+						text="Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae."
+					/>
+				</div>
 			</div>
 		</section>
 	);

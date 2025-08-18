@@ -19,7 +19,7 @@ const About = () => {
 						<img src={IMG} alt="img" />
 					</div>
 
-					<div>
+					<div className={styles.text}>
 						<Title top="ABOUT" span="HYDRA VR" />
 						<p>
 							Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus

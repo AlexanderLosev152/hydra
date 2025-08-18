@@ -1,11 +1,12 @@
+@import '../../scss/mixins';
 .wrapper {
-	display: flex;
+	@include grid(20rem, 7.4rem);
 	align-items: center;
-	gap: 118px;
 }
 
-.img {
-	img {
-		width: 524px;
+.text {
+	p {
+		margin-top: 2rem;
+		margin-bottom: 3rem;
 	}
 }
