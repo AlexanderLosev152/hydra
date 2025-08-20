@@ -10,8 +10,6 @@ const Links = () => {
 					<span>0{index + 1}</span>
 					<div className={styles.link}>
 						<svg
-							width="67"
-							height="67"
 							viewBox="0 0 67 67"
 							fill="none"
 							xmlns="http://www.w3.org/2000/svg"

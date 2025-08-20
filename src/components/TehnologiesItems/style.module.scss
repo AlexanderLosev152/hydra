@@ -2,8 +2,12 @@
 @import '../../scss/media';
 .wrapper {
 	margin-bottom: clamp(1rem, 7vw, 7.125rem);
-	@include grid(16rem, 1rem);
-	@include media($tablet) {
+	@include grid(clamp(14rem, 15vw, 18rem), 1rem);
+
+	@include media($tablet-big) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@include media($mobile) {
 		display: none;
 	}
 }

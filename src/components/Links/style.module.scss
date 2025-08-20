@@ -1,7 +1,11 @@
 @import '../../scss/mixins';
 @import '../../scss/vars';
+@import '../../scss/media';
 .wrapper {
-	@include grid(17rem, 1rem);
+	@include grid(clamp(8rem, 19vw, 17rem), 1rem);
+	@include media($tablet) {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 .box {
@@ -9,12 +13,11 @@
 	justify-items: center;
 	span {
 		font-weight: 700;
-		font-size: 4rem;
+		font-size: clamp(2rem, 5vw, 4rem);
 		display: grid;
 		place-items: center;
 		color: #343045;
-		width: 9.4rem;
-		height: 9.4rem;
+		padding: clamp(0.5em, 3vw, 0.9em);
 		border-radius: 100%;
 		background: linear-gradient(251deg, #c0b7e8 0%, #8176af 100%);
 		border: $border;
@@ -25,10 +28,14 @@
 .link {
 	display: flex;
 	align-items: flex-end;
-	gap: 1rem;
+	gap: clamp(0.5rem, 2vw, 1rem);
+	svg {
+		width: clamp(2rem, 5vw, 4.2rem);
+		height: clamp(2rem, 5vw, 4.2rem);
+	}
 	a {
 		font-weight: 700;
-		font-size: 24px;
+		font-size: clamp(1rem, 2vw, 1.5rem);
 		max-width: 11rem;
 	}
 }
