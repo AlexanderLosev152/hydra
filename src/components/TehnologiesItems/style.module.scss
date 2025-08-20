@@ -1,0 +1,9 @@
+@import '../../scss/mixins';
+@import '../../scss/media';
+.wrapper {
+	margin-bottom: clamp(1rem, 7vw, 7.125rem);
+	@include grid(16rem, 1rem);
+	@include media($tablet) {
+		display: none;
+	}
+}

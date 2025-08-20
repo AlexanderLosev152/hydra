@@ -14,9 +14,8 @@
 		display: none;
 	}
 	div {
-		//width: 33%;
 		flex-shrink: 1;
-		width: max(200px, 100%);
+		width: max(12.5rem, 100%);
 		&:not(:last-child):after {
 			content: '';
 			width: 2px;
@@ -25,4 +24,10 @@
 			margin-right: 2rem;
 		}
 	}
+}
+
+.bg {
+	border-radius: $border-radius-big;
+	box-shadow: $box-shadow;
+	background: $radial-gradient;
 }

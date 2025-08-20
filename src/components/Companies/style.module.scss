@@ -1,0 +1,10 @@
+@import '../../scss/mixins';
+@import '../../scss/media';
+.wrapper {
+	@include grid(clamp(3rem, 19vw, 15rem), 1rem);
+	align-items: center;
+	margin-inline: auto;
+	@include media($tablet-big) {
+		@include grid(clamp(3rem, 18vw, 15rem), 1rem);
+	}
+}

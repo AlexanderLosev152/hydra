@@ -12,9 +12,11 @@ const Contacts = () => {
 				))}
 			</div>
 
-			<SwiperWrapper data={contacts}>
-				{(item) => <ContactCard contact={item} />}
-			</SwiperWrapper>
+			<div className={styles.bg}>
+				<SwiperWrapper data={contacts} className="bg">
+					{(item) => <ContactCard contact={item} />}
+				</SwiperWrapper>
+			</div>
 		</>
 	);
 };

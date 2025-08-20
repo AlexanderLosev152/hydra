@@ -3,9 +3,6 @@
 .wrapper {
 	display: none;
 	padding: 1.2rem 3rem;
-	border-radius: $border-radius-big;
-	box-shadow: $box-shadow;
-	background: $radial-gradient;
 	position: relative;
 	@include media($tablet) {
 		display: block;

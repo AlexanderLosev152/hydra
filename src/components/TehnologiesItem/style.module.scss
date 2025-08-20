@@ -1,0 +1,31 @@
+@import '../../scss/vars';
+.wrapper {
+	background: #433d60;
+	background: linear-gradient(
+		90deg,
+		rgba(67, 61, 96, 1) 100%,
+		rgba(33, 30, 46, 1) 100%
+	);
+	min-height: 32rem;
+	padding: 1rem;
+	display: grid;
+	place-items: center;
+	text-align: center;
+	border-radius: $border-radius-small;
+}
+
+.img {
+	border-radius: 50%;
+	border: 1rem solid #0e0e0e;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 1.5rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #c0b7e8;
+}
+.descr {
+	font-weight: 400;
+	font-size: 12px;
+}

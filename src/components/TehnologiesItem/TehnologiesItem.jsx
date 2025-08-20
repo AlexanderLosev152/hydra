@@ -2,13 +2,13 @@ import styles from './style.module.scss';
 
 import Button from '../Button/Button';
 
-const TehnologiesItem = (img, title, descr, btn) => {
+const TehnologiesItem = ({ arr }) => {
 	return (
 		<div className={styles.wrapper}>
-			<img src={img} alt={title} />
-			<h3>{title}</h3>
-			<p>{descr}</p>
-			<Button title={btn} />
+			<img className={styles.img} src={arr.img} alt={arr.title} />
+			<h3 className={styles.title}>{arr.title}</h3>
+			<p className={styles.descr}>{arr.descr}</p>
+			<Button title={arr.btn} />
 		</div>
 	);
 };
