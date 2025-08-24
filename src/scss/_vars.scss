@@ -11,7 +11,7 @@ $background: linear-gradient(
 	rgba(33, 30, 46, 1) 100%
 );
 $box-shadow: 0 4px 4px 0 rgba(192, 183, 232, 0.01);
-$border-radius-big: 5.5rem;
+$border-radius-big: clamp(2rem,5vw,5.5rem);
 $border-radius-small: 2.5rem;
 
 $radial-gradient: radial-gradient(

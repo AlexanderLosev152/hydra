@@ -1,0 +1,63 @@
+@import "../../scss/vars";
+@import '../../scss/media';
+
+.form {
+  display: grid;
+  gap: 2.25rem 0.75rem;
+  width: 100%;
+  border-radius: $border-radius-small;
+  @include media($tablet) {
+  }
+  input,textarea {
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #fff;
+    padding: clamp(1rem,2vw,1.7rem);
+    border: 2px solid #fff;
+    border-radius: $border-radius-small;
+    background: transparent;
+    &::placeholder {
+      color: #fff;
+    }
+    @include media($tablet) {
+      grid-column: 1/3 ;
+    }
+  }
+  input:nth-child(1) {
+    grid-column: 1 /2;
+    @include media($tablet) {
+      grid-column: 1/3;
+    }
+  }
+  input:nth-child(2) {
+    grid-column: 2 /3;
+    @include media($tablet) {
+      grid-column: 1/3 ;
+    }
+  }
+  textarea {
+    grid-column: 1/3;
+    min-height: 13.75rem;
+    resize: none;
+  }
+
+
+}
+
+.btn {
+  grid-column: 1/3;
+  button {
+    font-weight: 700;
+    font-size: $font-size-mini;
+    color: #343045;
+    border-radius: $border-radius-small;
+    padding: 1rem 3em;
+    background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+
+    @include media($mobile) {
+      width: 100%;
+      margin-inline: auto;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
