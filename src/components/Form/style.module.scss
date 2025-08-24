@@ -16,6 +16,7 @@
     border: 2px solid #fff;
     border-radius: $border-radius-small;
     background: transparent;
+    outline: none;
     &::placeholder {
       color: #fff;
     }

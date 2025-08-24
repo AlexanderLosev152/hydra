@@ -4,7 +4,7 @@
 .wrapper {
   text-align: center;
   border-radius: $border-radius-big;
-  padding: clamp(1rem,5vw,5.625rem) clamp(1rem,6vw,6.25rem);
+  padding: clamp(1rem,5vw,5.625rem) clamp(1rem,4vw,6.25rem);
   background: radial-gradient(50% 50% at 50.71% 50%, rgb(64, 58, 95) 0%, rgb(33, 30, 46) 100%);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
