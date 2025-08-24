@@ -13,7 +13,6 @@ const Join = () => {
 						<Line />
 						<h4 className={styles.descr}>Let’s Build Your VR Experience</h4>
 					</div>
-
 					<Form />
 				</div>
 			</div>
