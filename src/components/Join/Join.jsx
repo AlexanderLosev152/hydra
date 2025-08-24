@@ -1,7 +1,7 @@
 import Form from '../Form/Form';
 import Title from '../Title/Title';
 import styles from './style.module.scss';
-import Line from "../Line/Line.jsx";
+import Line from '../Line/Line.jsx';
 
 const Join = () => {
 	return (
@@ -10,7 +10,7 @@ const Join = () => {
 				<div className={styles.wrapper}>
 					<div className={styles.title}>
 						<Title top={'JOIN HYDRA'} />
-                        <Line />
+						<Line />
 						<h4 className={styles.descr}>Let’s Build Your VR Experience</h4>
 					</div>
 
