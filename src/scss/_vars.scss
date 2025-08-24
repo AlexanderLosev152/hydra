@@ -1,7 +1,7 @@
 $font-family: 'Montserrat', sans-serif;
 
 $container-w: 73.25rem;
-$container-p: 1rem;
+$container-p: clamp(1rem,3vw,2rem);
 
 $color: #fff;
 $background: linear-gradient(

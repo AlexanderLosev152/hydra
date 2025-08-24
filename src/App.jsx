@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero';
 import Join from './components/Join/Join';
 import Services from './components/Services/Services';
 import Tehnologies from './components/Tehnologies/Tehnologies';
+import Footer from './components/Footer/Footer.jsx';
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 				<Services />
 				<Join />
 			</main>
+			<Footer />
 		</>
 	);
 }

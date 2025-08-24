@@ -1,5 +1,7 @@
 import styles from './style.module.scss';
 import LOGO from '../../../public/images/logo.svg';
+import FaceBookIcon from '../../icon/FaceBookIcon';
+import Arrow from '../Arrov/Arrow';
 
 const Logo = () => {
 	const alt = 'logo';

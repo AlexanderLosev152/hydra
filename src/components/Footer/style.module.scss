@@ -1,0 +1,59 @@
+@import "../../scss/mixins";
+@import "../../scss/media";
+
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  @include media($tablet) {
+    justify-content: center;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    @include media($tablet) {
+      display: none;
+    }
+  }
+}
+
+.socialBox {
+  display: grid;
+  justify-items: start;
+  align-items: start;
+  gap: 2.5rem;
+  @include media($mobile) {
+    justify-items: center;
+    a {
+    text-align: center;
+    }
+  }
+
+}
+
+.socialTitle {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.line {
+  text-align: center;
+  margin-bottom: 2rem;
+  svg {
+    width: 100%;
+    height: 2px;
+  }
+}
+
+.copyRigth {
+  text-align: center;
+  margin-bottom: 2rem;
+  p {
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: 0.13em;
+  }
+}
