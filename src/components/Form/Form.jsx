@@ -1,37 +1,49 @@
 import { useForm } from 'react-hook-form';
 import styles from './style.module.scss';
+import Button from '../Button/Button';
 
 const Form = () => {
-	const { register, handleSubmit, formState } = useForm({
+	const {
+		register,
+		handleSubmit,
+		formState: { errors }
+	} = useForm({
 		mode: 'onChange'
 	});
-	const onSubmit = (data) => {
-		console.log(data);
-	};
+	console.log(errors);
 
-	const error = formState.errors['email']?.message;
+	//const error = formState.errors['email']?.message;
 	return (
-		<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-			<input type="text" placeholder="First Name" />
-			<input type="text" placeholder="Last Name" />
+		<form
+			className={styles.form}
+			onSubmit={handleSubmit((data) => {
+				console.log(data);
+			})}
+		>
 			<input
-				type="email"
-				placeholder="Email"
-				{...register('email', {
-					required: 'this filed is required',
-					pattern: {
-						value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-						message: 'Invalid email address'
-					}
-				})}
+				{...register('firstName', { required: 'This is required' })}
+				type="text"
 			/>
-			<input type="tel" placeholder="Phone Number" />
 
+			<input
+				{...register('lastName', { required: 'This is required' })}
+				type="text"
+			/>
+			<input
+				{...register('email', { required: 'This is required' })}
+				type="email"
+			/>
+			<input
+				{...register('phoneNumber', { required: 'This is required' })}
+				type="text"
+			/>
+			<input
+				{...register('subject', { required: 'This is required' })}
+				type="text"
+			/>
 			<textarea name="" placeholder="Tell Us Something..."></textarea>
-			<button type="submit">SEND TO HYDRA</button>
-			<div className={styles.btn}></div>
-
-			{error}
+			<Button title={'SEND TO HYDRA'} type={'submit'} />
+			<p>{errors.firstName?.message}</p>
 		</form>
 	);
 };

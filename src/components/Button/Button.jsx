@@ -1,10 +1,10 @@
 import styles from './style.module.scss';
 
-const Button = ({ title }) => {
+const Button = ({ title, type }) => {
 	return (
-		<a className={styles.btn} href="#">
+		<button className={styles.btn} type={type}>
 			{title}
-		</a>
+		</button>
 	);
 };
 
